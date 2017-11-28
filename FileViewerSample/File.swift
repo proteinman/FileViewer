@@ -9,6 +9,7 @@
 import Foundation
 
 struct File {
+    let url: URL
     let name: String
     let isDirectory: Bool
     let size: Double

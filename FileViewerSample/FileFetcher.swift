@@ -37,7 +37,10 @@ final class FileFetcher {
                 }
             }
             
-            let file = File(name: name, isDirectory: isDirectory, size: itemSize)
+            let file = File(url: $0,
+                            name: name,
+                            isDirectory: isDirectory,
+                            size: itemSize)
             files.append(file)
         }
         

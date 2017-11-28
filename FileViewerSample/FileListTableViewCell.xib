@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FileListTableViewCell" rowHeight="103" id="KGk-i7-Jjw" customClass="FileListTableViewCell" customModule="FileViewerSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsj-pT-kWb">
+                        <rect key="frame" x="8" y="8" width="331" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="481-a0-0GP">
+                        <rect key="frame" x="8" y="64.5" width="331" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="481-a0-0GP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0qz-sD-dum"/>
+                    <constraint firstItem="481-a0-0GP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lsj-pT-kWb" secondAttribute="bottom" constant="20" id="XpI-ln-oRJ"/>
+                    <constraint firstAttribute="trailing" secondItem="481-a0-0GP" secondAttribute="trailing" constant="8" id="bKE-Rg-9ph"/>
+                    <constraint firstItem="Lsj-pT-kWb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bf2-UR-hvm"/>
+                    <constraint firstAttribute="trailing" secondItem="Lsj-pT-kWb" secondAttribute="trailing" constant="8" id="cG8-9c-j6f"/>
+                    <constraint firstItem="Lsj-pT-kWb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="h3p-h8-LXp"/>
+                    <constraint firstAttribute="bottom" secondItem="481-a0-0GP" secondAttribute="bottom" constant="8" id="olM-J7-EmE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="Lsj-pT-kWb" id="yfe-vV-eWI"/>
+                <outlet property="sizeLabel" destination="481-a0-0GP" id="zZV-mf-cZv"/>
+            </connections>
+            <point key="canvasLocation" x="-63.5" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>
