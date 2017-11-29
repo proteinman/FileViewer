@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,9 +32,18 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcg-BO-vgx">
+                        <rect key="frame" x="262.5" y="12" width="72.5" height="72.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72.5" id="erI-4A-enF"/>
+                            <constraint firstAttribute="width" secondItem="dcg-BO-vgx" secondAttribute="height" multiplier="1:1" id="ogd-Oq-fFE"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="481-a0-0GP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0qz-sD-dum"/>
+                    <constraint firstItem="dcg-BO-vgx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JF8-hS-L2q"/>
+                    <constraint firstAttribute="trailing" secondItem="dcg-BO-vgx" secondAttribute="trailing" constant="12" id="Ndv-Tz-bbM"/>
                     <constraint firstItem="481-a0-0GP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lsj-pT-kWb" secondAttribute="bottom" constant="20" id="XpI-ln-oRJ"/>
                     <constraint firstAttribute="trailing" secondItem="481-a0-0GP" secondAttribute="trailing" constant="8" id="bKE-Rg-9ph"/>
                     <constraint firstItem="Lsj-pT-kWb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bf2-UR-hvm"/>
@@ -44,10 +54,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="iconImage" destination="dcg-BO-vgx" id="chc-Pu-5Qd"/>
                 <outlet property="nameLabel" destination="Lsj-pT-kWb" id="yfe-vV-eWI"/>
                 <outlet property="sizeLabel" destination="481-a0-0GP" id="zZV-mf-cZv"/>
             </connections>
-            <point key="canvasLocation" x="-269" y="-57"/>
+            <point key="canvasLocation" x="-269.5" y="-57.5"/>
         </tableViewCell>
     </objects>
 </document>
