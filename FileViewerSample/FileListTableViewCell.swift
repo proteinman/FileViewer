@@ -11,6 +11,7 @@ import UIKit
 class FileListTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +27,7 @@ class FileListTableViewCell: UITableViewCell {
     func setup(file: File) {
         nameLabel.text = file.name
         sizeLabel.text = file.sizeString
+        iconImage.image = UIImage(named: file.name)
         accessoryType = file.isDirectory ? .disclosureIndicator : .none
     }
 }
