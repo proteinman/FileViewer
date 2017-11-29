@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FileBrowser
 
 class ViewController: UIViewController {
     
@@ -19,5 +20,9 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func tapDocumentFileBrowserButton(_ sender: Any) {
+        let fileBrowser = FileBrowser()
+        present(fileBrowser, animated: true, completion: nil)
+    }
 }
 

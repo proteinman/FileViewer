@@ -28,10 +28,22 @@
                                     <action selector="tapDocumentDirectoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vt-Gr-5Yv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDX-M6-pWt">
+                                <rect key="frame" x="20" y="611" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="fileBrowser">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDocumentFileBrowserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JF-Cb-8ks"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YDX-M6-pWt" secondAttribute="bottom" constant="20" id="V2J-GP-qWY"/>
                             <constraint firstItem="5BD-mo-Wif" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1p-As-PQk"/>
+                            <constraint firstItem="YDX-M6-pWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tBF-Vw-kYd"/>
                             <constraint firstItem="5BD-mo-Wif" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u0p-Bh-HPd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
