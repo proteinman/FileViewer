@@ -43,6 +43,7 @@ final class FileFetcher {
                             size: itemSize)
             files.append(file)
         }
+        files.sort { $0.size > $1.size }
         
         return files
     }
