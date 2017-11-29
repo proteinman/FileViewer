@@ -65,11 +65,11 @@ extension AppDelegate {
                     if let dummyImageURL = resourceURL?.appendingPathComponent(imageName) {
                         do {
                             try fileManager.copyItem(atPath: dummyImageURL.path,
-                                                     toPath: documentDirectoryURL.appendingPathComponent(imageName).path)
+                                                     toPath: imageDirectoryURL.appendingPathComponent(imageName).path)
                         } catch {}
                         do {
                             try fileManager.copyItem(atPath: dummyImageURL.path,
-                                                     toPath: imageDirectoryURL.appendingPathComponent(imageName).path)
+                                                     toPath: documentDirectoryURL.appendingPathComponent(imageName).path)
                         } catch {}
                     }
                 }
@@ -87,11 +87,14 @@ extension AppDelegate {
                 if let dummyVideoURL = resourceURL?.appendingPathComponent(videoName) {
                     do {
                         try fileManager.copyItem(atPath: dummyVideoURL.path,
-                                                 toPath: documentDirectoryURL.appendingPathComponent(videoName).path)
+                                                 toPath: videoDirectoryURL.appendingPathComponent(videoName).path)
                     } catch {
+                       print(error)
                     }
                 }
-            } catch {}
+            } catch {
+                print(error)
+            }
         }
     }
 }

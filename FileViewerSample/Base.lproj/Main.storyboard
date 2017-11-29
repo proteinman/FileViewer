@@ -19,9 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BD-mo-Wif">
-                                <rect key="frame" x="34" y="315" width="306" height="36"/>
+                                <rect key="frame" x="138" y="315" width="98" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="ドキュメントディレクトリを表示"/>
+                                <state key="normal" title="/Document">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="tapDocumentDirectoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vt-Gr-5Yv"/>
                                 </connections>

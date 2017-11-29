@@ -39,7 +39,7 @@ extension FileListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let files = files, indexPath.item + 1 < files.count {
+        if let files = files, indexPath.item + 1 <= files.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FileListTableViewCell",
                                                      for: indexPath) as! FileListTableViewCell
             cell.setup(file: files[indexPath.item])
@@ -52,7 +52,7 @@ extension FileListViewController: UITableViewDataSource {
 
 extension FileListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let files = files, indexPath.item + 1 < files.count {
+        if let files = files, indexPath.item + 1 <= files.count {
             let file = files[indexPath.item]
             if file.isDirectory {
                 let vc = FileListViewController(url: file.url)
